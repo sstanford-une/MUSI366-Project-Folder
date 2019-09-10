@@ -26,12 +26,12 @@ def _select(context, path):
     return None
 
 def CollectCorpus(): #Fills _corpusNames & _corpusTrees
-    for filename in glob(r'E:/Documents/UNE/MUSI366/Corpus\*.xml'):
+    for filename in glob(r'E:/Documents/UNE/MUSI366/Python Projects/MUSI366-Project-Folder/Corpus\*.xml'):
         tree = etree.parse(filename)   
         _corpusTrees.append(tree)
 
 def CollectLyrics():
-    for filename in glob(r'E:/Documents/UNE/MUSI366/Corpus\*.xml'):
+    for filename in glob(r'E:/Documents/UNE/MUSI366/Python Projects/MUSI366-Project-Folder/Corpus\*.xml'):
         tree = etree.parse(filename) 
         root = tree.getroot()
         _textList = []
